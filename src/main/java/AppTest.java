@@ -156,7 +156,7 @@ public class AppTest extends javax.swing.JFrame {
 
 	Graphics2D g = (Graphics2D) squareImage.getGraphics();
 	g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-	g.setColor(Color.RED);
+	g.setColor(Color.PINK);
 	g.fill(new Rectangle(5, 5, 50, 50));
 	g.draw(new Rectangle(5, 5, 50, 50));
 	return squareImage;
