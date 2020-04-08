@@ -74,6 +74,8 @@ public class AllShapes {
 	    
     } 
     
+    // Tworzenie trójkąta
+    
     public BufferedImage getTriangle() {
         
 
