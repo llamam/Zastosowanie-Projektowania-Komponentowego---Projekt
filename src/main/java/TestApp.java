@@ -48,7 +48,7 @@ public class TestApp extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(jButton2)
-                        .addGap(18, 18, 18)
+                        .addGap(41, 41, 41)
                         .addComponent(jButton3)))
                 .addContainerGap(175, Short.MAX_VALUE))
         );
