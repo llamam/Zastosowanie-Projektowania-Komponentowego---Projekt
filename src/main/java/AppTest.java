@@ -11,13 +11,17 @@ public class AppTest extends javax.swing.JFrame {
 
     public AppTest() {
         initComponents();
-        Label.setBounds(70, 80, 100, 100);
+        
+        btnBasic.setBorderPainted(false); 
+	btnBasic.setContentAreaFilled(false); 
+	btnBasic.setOpaque(false);
+        btnBasic.setIcon(new ImageIcon(shapecol.getCircle()));
+        btnBasic.repaint();
+        Label.setIcon(new ImageIcon(shapecol.getCircleB()));
+        Label.setBounds(90, 100, 100, 100);
         Label.repaint();
     }
     
-    
-
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -150,8 +154,8 @@ public class AppTest extends javax.swing.JFrame {
         btnBasic.setIcon(new ImageIcon(AllShapes.getCircle()));
         btnBasic.repaint();
         Label.setIcon(new ImageIcon(AllShapes.getCircleB()));
-        Label.setBounds(70, 80, 100, 100);
-        //Label.repaint();
+        Label.setBounds(90, 100, 100, 100);
+        Label.repaint();
     }//GEN-LAST:event_btnCircleActionPerformed
 
     private void btnSquareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSquareActionPerformed
@@ -160,7 +164,6 @@ public class AppTest extends javax.swing.JFrame {
 	btnBasic.setOpaque(false);
         btnBasic.setIcon(new ImageIcon(shapecol.getSquare()));
         Label.setIcon(new ImageIcon(shapecol.getCircleB()));
-        Label.setBounds(50, 10, 100, 100);
         Label.repaint();
     }//GEN-LAST:event_btnSquareActionPerformed
 
@@ -175,7 +178,6 @@ public class AppTest extends javax.swing.JFrame {
 	btnBasic.setOpaque(false);
         btnBasic.setIcon(new ImageIcon(shapecol.getRectangle()));
         Label.setIcon(new ImageIcon(shapecol.getCircleB()));
-        Label.setBounds(50, 10, 100, 100);
         Label.repaint();
     }//GEN-LAST:event_btnRectangleActionPerformed
 
@@ -185,7 +187,6 @@ public class AppTest extends javax.swing.JFrame {
 	btnBasic.setOpaque(false);
         btnBasic.setIcon(new ImageIcon(shapecol.getTriangle()));
         Label.setIcon(new ImageIcon(shapecol.getTriangleB()));
-        Label.setBounds(50, 10, 100, 100);
         Label.repaint();
     }//GEN-LAST:event_btnTriangleActionPerformed
 
