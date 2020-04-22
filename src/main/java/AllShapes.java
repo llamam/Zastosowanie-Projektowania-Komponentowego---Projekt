@@ -16,6 +16,9 @@ public class AllShapes {
     int x[]={25,0,50};
     int y[]={0,60,60};
     
+    int xb[]={35,0,60};
+    int yb[]={0,70,70};
+    
     public Color getCColor() {
         return CCOLOR;
     }
@@ -40,6 +43,19 @@ public class AllShapes {
 	return circleImage;
 	    
     }
+        
+        public static BufferedImage getCircleB() {
+        
+	BufferedImage circleBImage = new BufferedImage(70, 70, BufferedImage.TYPE_INT_ARGB);
+
+	Graphics2D g = (Graphics2D) circleBImage.getGraphics();
+	g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+	g.setColor(CCOLOR);
+	g.drawOval(5, 5, 60, 60);
+        g.dispose();
+	return circleBImage;
+	//XD
+    }
     
     // Tworzenie kwadratu
         
@@ -55,7 +71,20 @@ public class AllShapes {
         g.dispose();
 	return squareImage;
 	    
-    }       
+    }
+    
+    public static BufferedImage getSquareB() {
+
+	BufferedImage squareImage = new BufferedImage(70, 70, BufferedImage.TYPE_INT_ARGB);
+
+	Graphics2D g = (Graphics2D) squareImage.getGraphics();
+	g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+	g.setColor(CCOLOR);
+	g.draw(new Rectangle(5, 5, 60, 60));
+        g.dispose();
+	return squareImage;
+	    
+    }
 
     // Tworzenie kwadratu
         
@@ -72,14 +101,28 @@ public class AllShapes {
         g.dispose();
 	return triangleImage;
 	    
-    } 
+    }
+    
+    public BufferedImage getRectangleB() {
+        
+
+	BufferedImage triangleImage = new BufferedImage(80, 80, BufferedImage.TYPE_INT_ARGB);
+
+	Graphics2D g = (Graphics2D) triangleImage.getGraphics();
+	g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+	g.setColor(CCOLOR);
+	g.draw(new Rectangle(0, 5, 80, 60));
+        g.dispose();
+	return triangleImage;
+	    
+    }
     
     // Tworzenie trójkąta
     
     public BufferedImage getTriangle() {
         
 
-	BufferedImage triangleImage = new BufferedImage(60, 60, BufferedImage.TYPE_INT_ARGB);
+	BufferedImage triangleImage = new BufferedImage(80, 80, BufferedImage.TYPE_INT_ARGB);
 
 	Graphics2D g = (Graphics2D) triangleImage.getGraphics();
 	g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -89,7 +132,21 @@ public class AllShapes {
         g.dispose();
 	return triangleImage;
 	    
-    }        
+    }
+    
+    public BufferedImage getTriangleB() {
+        
+
+	BufferedImage triangleImage = new BufferedImage(60, 60, BufferedImage.TYPE_INT_ARGB);
+
+	Graphics2D g = (Graphics2D) triangleImage.getGraphics();
+	g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+	g.setColor(CCOLOR);
+	g.drawPolygon(xb,yb, 3);
+        g.dispose();
+	return triangleImage;
+	    
+    }
     
     // Zamiana String na Color
     
