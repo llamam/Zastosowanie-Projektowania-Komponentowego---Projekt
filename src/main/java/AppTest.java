@@ -152,7 +152,7 @@ public class AppTest extends javax.swing.JFrame {
         btnBasic.setIcon(new ImageIcon(AllShapes.getCircle()));
         btnBasic.repaint();
         Label.setIcon(new ImageIcon(AllShapes.getCircleB()));
-        Label.setBounds(90, 100, 100, 100);
+        Label.setBounds(90, 82, 100, 100);
         Label.repaint();
     }//GEN-LAST:event_btnCircleActionPerformed
 
@@ -161,7 +161,8 @@ public class AppTest extends javax.swing.JFrame {
 	btnBasic.setContentAreaFilled(false); 
 	btnBasic.setOpaque(false);
         btnBasic.setIcon(new ImageIcon(shapecol.getSquare()));
-        Label.setIcon(new ImageIcon(shapecol.getCircleB()));
+        Label.setIcon(new ImageIcon(shapecol.getSquareB()));
+        Label.setBounds(90, 82, 100, 100);
         Label.repaint();
     }//GEN-LAST:event_btnSquareActionPerformed
 
@@ -175,7 +176,8 @@ public class AppTest extends javax.swing.JFrame {
 	btnBasic.setContentAreaFilled(false); 
 	btnBasic.setOpaque(false);
         btnBasic.setIcon(new ImageIcon(shapecol.getRectangle()));
-        Label.setIcon(new ImageIcon(shapecol.getCircleB()));
+        Label.setIcon(new ImageIcon(shapecol.getRectangleB()));
+        Label.setBounds(90, 87, 100, 100);
         Label.repaint();
     }//GEN-LAST:event_btnRectangleActionPerformed
 
@@ -185,6 +187,7 @@ public class AppTest extends javax.swing.JFrame {
 	btnBasic.setOpaque(false);
         btnBasic.setIcon(new ImageIcon(shapecol.getTriangle()));
         Label.setIcon(new ImageIcon(shapecol.getTriangleB()));
+        Label.setBounds(80, 65, 100, 100);
         Label.repaint();
     }//GEN-LAST:event_btnTriangleActionPerformed
 
