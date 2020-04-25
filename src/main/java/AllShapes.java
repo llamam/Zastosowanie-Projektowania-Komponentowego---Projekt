@@ -17,7 +17,7 @@ public class AllShapes {
     int y[]={0,60,60};
     
     int xb[]={35,0,60};
-    int yb[]={0,70,70};
+    int yb[]={1,60,60};
     
     public Color getCColor() {
         return CCOLOR;
@@ -111,7 +111,7 @@ public class AllShapes {
 	Graphics2D g = (Graphics2D) triangleImage.getGraphics();
 	g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 	g.setColor(CCOLOR);
-	g.draw(new Rectangle(0, 5, 80, 60));
+	g.draw(new Rectangle(0, 5, 70, 60));
         g.dispose();
 	return triangleImage;
 	    
